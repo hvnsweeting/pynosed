@@ -1,6 +1,6 @@
 # PyNoSed
 
-Just enough Python for Sysadmin.
+Just enough Python 3.4+ for Sysadmin.
 
 Given normal sysadmin jobs, which daily requires using:
 
