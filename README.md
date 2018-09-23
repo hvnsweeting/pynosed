@@ -284,3 +284,15 @@ www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
 whoopsie:x:109:116::/nonexistent:/bin/false
 uuidd:x:107:111::/run/uuidd:/bin/false
 ```
+
+
+
+## TODO
+- head
+- tail
+- sed
+- awk
+- tr
+- find
+- argparse
+- requests & JSON
