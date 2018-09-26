@@ -23,14 +23,19 @@ Those are all de-factor/beloved/popular text manipulate tools that every
 sysadmin must proficient with.
 
 But writing python script which calls these tools are just
-- un-pythonic - it makes you not look like really know some Python
 - creates unnecessary subprocess - which costs more resources
 - less-portable, depends on these tools version/feature. One runs on Linux
-might not run on your colleague shiny MacBook.
+  might not run on your colleague shiny MacBook and it gets worse when need
+  to run on Windows, too..
+- un-pythonic - it makes you not look like really know some Python
 
 So let's write all those in Python. It's put aside what you already learned
 and used for years on CLI, but I promise, that is simpler than the back time
 you leart those UNIX tools.
+
+NOTE: **this tutorial does not target to "reinvent" UNIX tools, or replacing
+those tools for daily usage, but as a guide
+to archive their features as part of your bigger python application.**
 
 ## cat
 
@@ -284,8 +289,6 @@ www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
 whoopsie:x:109:116::/nonexistent:/bin/false
 uuidd:x:107:111::/run/uuidd:/bin/false
 ```
-
-
 
 ## TODO
 - head
