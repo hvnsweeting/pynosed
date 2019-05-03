@@ -24,14 +24,14 @@ sysadmin must proficient with.
 
 But writing python script which calls these tools are just
 - creates unnecessary subprocess - which costs more resources
-- less-portable, depends on these tools version/feature. One runs on Linux
+- less-portable, depends on these tools' version/feature. One runs on Linux
   might not run on your colleague shiny MacBook and it gets worse when need
   to run on Windows, too..
 - un-pythonic - it makes you not look like really know some Python
 
-So let's write all those in Python. It's put aside what you already learned
+So, let's write all those in Python. It's put aside what you already learned
 and used for years on CLI, but I promise, that is simpler than the back time
-you leart those UNIX tools.
+you learnt those UNIX tools.
 
 NOTE: **this tutorial does not target to "reinvent" UNIX tools, or replacing
 those tools for daily usage, but as a guide
@@ -63,7 +63,7 @@ import sys
 for filename in sys.argv[1:]:
     with open(filename) as f:
         for line in f:
-            # end='' to not auto-add newline to output. A file already have newline at the end of each line.
+            # end='' to not auto-add newline to output. A file already has newline at the end of each line.
             print(line, end='')
 ```
 
@@ -191,7 +191,7 @@ A big note: though using regular expression works here, it has flaws:
 `999.999.999.999` still match, even it is not a valid IPv4.
 - regex is hard to understand/write/debug.
 
-Using `re` library can help replacing almost every UNIX tools that mainly work with regex:
+Using `re` library can help replacing almost every UNIX tool that mainly work with regex:
 
 - grep - to find a pattern
 - sed - to replace a pattern
@@ -227,7 +227,7 @@ for line in sys.stdin:
     last_line = line
 ```
 
-One common option used is `-c` to count number of occurences. To implement in
+One common option used is `-c` to count number of occurrences. To implement in
 Python by iterating each line and count could be tricky (do try it), but
 using standard library `itertools` makes thing trivial:
 
